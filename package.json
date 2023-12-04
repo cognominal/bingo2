@@ -22,6 +22,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@rich_harris/svelte-split-pane": "^1.1.1",
 		"mdsvex": "^0.11.0"
 	}
 }
