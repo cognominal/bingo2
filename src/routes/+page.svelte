@@ -1,6 +1,8 @@
 <script>
 	import { SplitPane } from '@rich_harris/svelte-split-pane';
-  
+	import CodeMirror from '../lib/CodeMirror.svelte';
+
+	let editor = null
 
 	const dividerColor = 'black';
 	const dividerThickness = '20px';
@@ -16,6 +18,9 @@
 	--color={dividerColor}
 	--thickness={dividerThickness}
   >
-	<section slot="a">this is on the left</section>
+	<section slot="a">
+		<CodeMirror bind:this={editor} readonly />
+
+	</section>
 	<section slot="b">this is on the right</section>
   </SplitPane>
